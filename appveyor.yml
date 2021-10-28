@@ -30,3 +30,13 @@ test: off
 # Run custom build script.
 build_script:
 - cmd: tools\CustomBuildTool\bin\Release\CustomBuildTool.exe -appveyor -debug
+
+artifacts:
+- path: processhacker-build-bin.zip
+  name: build-bin.zip
+- path: processhacker-build-setup.exe
+  name: build-setup.exe
+- path: processhacker-build-pdb.zip
+  name: build-pdb.zip
+- path: build
+  name: build.zip
